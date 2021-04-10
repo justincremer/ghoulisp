@@ -2,10 +2,11 @@ package main
 
 import (
 	"fmt"
-	"lexer"
+
+	"github.com/justincremer/ghoulisp.git/src/lexer"
 )
 
 func main() {
-	token := lexer.Tokenize("+")
-	fmt.Println(lexer.repr(token))
+	token := lexer.Tokenize([]byte("+"))
+	fmt.Println(lexer.Repr(token))
 }

@@ -10,7 +10,7 @@ type Token struct {
 	val []byte // Value
 }
 
-func (token Token) repr() string {
+func (token Token) Repr() string {
 	return fmt.Sprintf("Token: { %v, %v }", token.t, token.val)
 }
 
