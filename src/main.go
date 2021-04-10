@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	token := lexer.Tokenize([]byte("+"))
-	fmt.Println(lexer.Repr(token))
+	token := lexer.Tokenize("(")
+	fmt.Println(token.Repr())
 }
